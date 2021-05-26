@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+}
+
+select, input {
+  outline: none;
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  min-width: 1280px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+html body::-webkit-scrollbar {
+  background: transparent;
+  height: 5px;
+}
+html body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+html body::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border-radius: 10px;
+}
+html body header {
+  width: 100%;
+  height: 50px;
+  background: #FF574D;
+}
+html body header button {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  position: relative;
+  float: left;
+  transition: 0.3s all;
+}
+html body header button:hover, html body header button:active, html body header button.active {
+  background: #4556b1;
+}
+html body header button:hover i, html body header button:active i, html body header button.active i {
+  color: #ffffff;
+}
+html body header button i {
+  font-size: 30px;
+  color: #eeeeee;
+}
+html body header button.list span {
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 6px;
+  background: #eeeeee;
+  border-radius: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+html body header button.list span:nth-of-type(1) {
+  top: 10px;
+}
+html body header button.list span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+html body header button.list span:nth-of-type(3) {
+  bottom: 10px;
+}
+html body header button.search {
+  width: auto;
+  padding: 0px 8px;
+}
+html body header button.search:hover input, html body header button.search:active input, html body header button.search.active input {
+  opacity: 1;
+  width: 160px;
+}
+html body header button.search input {
+  opacity: 0;
+  width: 0px;
+  height: 24px;
+  border-radius: 30px;
+  border: none;
+  vertical-align: super;
+  margin-left: 8px;
+  padding-left: 10px;
+  transition: 0.2s all;
+}
+html body header button.search input::placeholder {
+  color: #888888;
+}
+html body header .logo {
+  margin: 0px auto;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+}
+html body header .logo p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 50px;
+}
+html body main {
+  width: 100%;
+  height: auto;
+}
+html body main .left {
+  width: 15%;
+  height: 100%;
+  background: #000000d7;
+  float: left;
+}
+html body main .left ul {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+html body main .left ul li {
+  width: 100%;
+  height: auto;
+  color: #888888;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s all;
+  -webkit-user-select: none;
+          user-select: none;
+}
+html body main .left ul li:hover, html body main .left ul li:active, html body main .left ul li.active {
+  color: #fff;
+}
+html body main .left ul li:hover span, html body main .left ul li:active span, html body main .left ul li.active span {
+  opacity: 1;
+}
+html body main .left ul li span {
+  opacity: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 18px;
+  background: #44ff16;
+  margin-left: 10px;
+  transition: 0.2s all;
+}
+html body main .mainBox {
+  width: 85%;
+  height: 100%;
+  overflow: auto;
+  font-size: 0px;
+  box-sizing: border-box;
+  padding: 1% 1% 0px;
+}
+html body main .mainBox::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+html body main .mainBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+html body main .mainBox::-webkit-scrollbar-thumb {
+  background: #4556b1;
+  border-radius: 10px;
+}
+html body main .mainBox div {
+  display: inline-block;
+  width: 49.397%;
+  height: 0px;
+  padding-bottom: 30%;
+  background: #4556b1;
+  margin-bottom: 1.208%;
+}
+html body main .mainBox div:nth-of-type(even) {
+  margin-left: 1.208%;
+}
