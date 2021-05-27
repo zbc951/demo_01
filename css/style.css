@@ -37,7 +37,8 @@ body {
 
 ol, ul {
   list-style: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 blockquote, q {
@@ -64,7 +65,8 @@ button {
 
 select, input {
   outline: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main {
@@ -77,13 +79,13 @@ html {
 }
 html body {
   width: 100%;
-  min-width: 1280px;
+  min-width: 1100px;
   height: 100%;
-  overflow-y: hidden;
-  overflow-x: auto;
+  overflow: auto;
 }
 html body::-webkit-scrollbar {
   background: transparent;
+  width: 5px;
   height: 5px;
 }
 html body::-webkit-scrollbar-track {
@@ -98,6 +100,11 @@ html body header {
   width: 100%;
   height: 50px;
   background: #FF574D;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 1100px;
+  z-index: 2;
 }
 html body header button {
   width: 50px;
@@ -105,6 +112,7 @@ html body header button {
   background: transparent;
   position: relative;
   float: left;
+  -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 html body header button:hover, html body header button:active, html body header button.active {
@@ -125,14 +133,16 @@ html body header button.list span {
   background: #eeeeee;
   border-radius: 30px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 html body header button.list span:nth-of-type(1) {
   top: 10px;
 }
 html body header button.list span:nth-of-type(2) {
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 html body header button.list span:nth-of-type(3) {
   bottom: 10px;
@@ -154,7 +164,20 @@ html body header button.search input {
   vertical-align: super;
   margin-left: 8px;
   padding-left: 10px;
+  -webkit-transition: 0.2s all;
   transition: 0.2s all;
+}
+html body header button.search input::-webkit-input-placeholder {
+  color: #888888;
+}
+html body header button.search input::-moz-placeholder {
+  color: #888888;
+}
+html body header button.search input:-ms-input-placeholder {
+  color: #888888;
+}
+html body header button.search input::-ms-input-placeholder {
+  color: #888888;
 }
 html body header button.search input::placeholder {
   color: #888888;
@@ -175,12 +198,36 @@ html body header .logo p {
 html body main {
   width: 100%;
   height: auto;
+  margin-top: 50px;
+}
+html body main.twin .mainBox {
+  width: 85%;
+  float: right;
+}
+html body main.single .mainBox {
+  width: 100%;
+}
+html body main.single .mainBox section {
+  width: 49.491%;
+  margin-bottom: 1.02%;
+}
+html body main.single .mainBox section:nth-of-type(even) {
+  margin-left: 1.02%;
 }
 html body main .left {
-  width: 15%;
+  width: 0%;
   height: 100%;
   background: #000000d7;
-  float: left;
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  overflow: hidden;
+  z-index: 2;
+}
+html body main .left.display {
+  width: 15%;
 }
 html body main .left ul {
   width: 100%;
@@ -194,9 +241,13 @@ html body main .left ul li {
   padding: 10px 25px;
   font-size: 16px;
   cursor: pointer;
+  -webkit-transition: 0.2s all;
   transition: 0.2s all;
   -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
+  white-space: nowrap;
 }
 html body main .left ul li:hover, html body main .left ul li:active, html body main .left ul li.active {
   color: #fff;
@@ -212,15 +263,19 @@ html body main .left ul li span {
   height: 18px;
   background: #44ff16;
   margin-left: 10px;
+  -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 html body main .mainBox {
-  width: 85%;
   height: 100%;
-  overflow: auto;
   font-size: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1% 1% 0px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 html body main .mainBox::-webkit-scrollbar {
   background: transparent;
@@ -234,14 +289,82 @@ html body main .mainBox::-webkit-scrollbar-thumb {
   background: #4556b1;
   border-radius: 10px;
 }
-html body main .mainBox div {
+html body main .mainBox section {
   display: inline-block;
   width: 49.397%;
   height: 0px;
   padding-bottom: 30%;
   background: #4556b1;
   margin-bottom: 1.208%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: relative;
+  vertical-align: top;
 }
-html body main .mainBox div:nth-of-type(even) {
+html body main .mainBox section:nth-of-type(even) {
   margin-left: 1.208%;
+}
+html body main .mainBox section a {
+  display: block;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 56%;
+  background: url("../images/demo_001.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox section p {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 15px;
+}
+
+.lb-dataContainer {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.lb-close {
+  width: 40px !important;
+  height: 40px !important;
+  background-size: 100% !important;
+  position: absolute;
+  top: -7px;
+  right: 0px;
+}
+
+.lb-caption {
+  font-size: 18px !important;
+}
+
+@media screen and (max-width: 1100px) {
+  html body main .left {
+    min-width: 0px;
+  }
+  html body main .left.display {
+    min-width: 164px;
+  }
+  html body main.twin .mainBox, html body main.single .mainBox {
+    width: 100%;
+  }
+  html body main.twin .mainBox section, html body main.single .mainBox section {
+    width: 100%;
+    padding-bottom: 45%;
+    margin-bottom: 1.021%;
+  }
+  html body main.twin .mainBox section:nth-of-type(even), html body main.single .mainBox section:nth-of-type(even) {
+    margin-left: 0%;
+  }
+  html body main.twin .mainBox section a, html body main.single .mainBox section a {
+    padding-bottom: 41%;
+  }
+  html body main.twin .mainBox section p, html body main.single .mainBox section p {
+    font-size: 20px;
+    bottom: 3%;
+  }
 }
