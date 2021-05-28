@@ -9,42 +9,6 @@ $(function(){
     $('header .search,header .search input').blur(function(){
         $('header .search').removeClass('active');
     })
-
-    $('header .list').click(function(){
-        if($('main').hasClass('twin')) {
-            $('main').attr('class','single');
-        } else {
-            $('main').attr('class','twin');
-        }
-
-        $('.left').toggleClass('display');
-    })
-})
-
-    //1100以下左列隱藏
-
-$(function(){
-    var wwd = window.innerWidth;
-    if(wwd > 1100) {
-        $('.list').addClass('active');
-        $('.left').addClass('display');
-        $('main').attr('class','twin');
-    } else {
-        $('.list').removeClass('active');
-        $('.left').removeClass('display');
-    }
-
-    $(window).resize(function(){
-        var wwd = window.innerWidth;
-        if(wwd > 1100) {
-            $('.list').addClass('active');
-            $('.left').addClass('display');
-            $('main').attr('class','twin');
-        } else {
-            $('.list').removeClass('active');
-            $('.left').removeClass('display');
-        }
-    })
 })
 
     //1100以下頁面拖動效果

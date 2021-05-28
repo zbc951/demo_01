@@ -125,28 +125,6 @@ html body header button i {
   font-size: 30px;
   color: #eeeeee;
 }
-html body header button.list span {
-  display: block;
-  position: absolute;
-  width: 60%;
-  height: 6px;
-  background: #eeeeee;
-  border-radius: 30px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-html body header button.list span:nth-of-type(1) {
-  top: 10px;
-}
-html body header button.list span:nth-of-type(2) {
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-html body header button.list span:nth-of-type(3) {
-  bottom: 10px;
-}
 html body header button.search {
   width: auto;
   padding: 0px 8px;
@@ -200,34 +178,15 @@ html body main {
   height: auto;
   margin-top: 50px;
 }
-html body main.twin .mainBox {
-  width: 85%;
-  float: right;
-}
-html body main.single .mainBox {
-  width: 100%;
-}
-html body main.single .mainBox section {
-  width: 49.491%;
-  margin-bottom: 1.02%;
-}
-html body main.single .mainBox section:nth-of-type(even) {
-  margin-left: 1.02%;
-}
 html body main .left {
-  width: 0%;
+  width: 15%;
   height: 100%;
   background: #000000d7;
   position: fixed;
   left: 0px;
   top: 50px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
   overflow: hidden;
   z-index: 2;
-}
-html body main .left.display {
-  width: 15%;
 }
 html body main .left ul {
   width: 100%;
@@ -266,16 +225,23 @@ html body main .left ul li span {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
+html body main .fakeLeft {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  z-index: 1;
+}
 html body main .mainBox {
+  width: 85%;
   height: 100%;
   font-size: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1% 1% 0px;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  float: right;
 }
 html body main .mainBox::-webkit-scrollbar {
   background: transparent;
@@ -296,8 +262,6 @@ html body main .mainBox section {
   padding-bottom: 30%;
   background: #4556b1;
   margin-bottom: 1.208%;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
   position: relative;
   vertical-align: top;
 }
@@ -343,28 +307,15 @@ html body main .mainBox section p {
 }
 
 @media screen and (max-width: 1100px) {
-  html body main .left {
-    min-width: 0px;
-  }
-  html body main .left.display {
+  html body main .left, html body main .fakeLeft {
     min-width: 164px;
+    width: 0%;
   }
-  html body main.twin .mainBox, html body main.single .mainBox {
+  html body main .mainBox section {
     width: 100%;
+    padding-bottom: 60%;
   }
-  html body main.twin .mainBox section, html body main.single .mainBox section {
-    width: 100%;
-    padding-bottom: 45%;
-    margin-bottom: 1.021%;
-  }
-  html body main.twin .mainBox section:nth-of-type(even), html body main.single .mainBox section:nth-of-type(even) {
+  html body main .mainBox section:nth-of-type(even) {
     margin-left: 0%;
-  }
-  html body main.twin .mainBox section a, html body main.single .mainBox section a {
-    padding-bottom: 41%;
-  }
-  html body main.twin .mainBox section p, html body main.single .mainBox section p {
-    font-size: 20px;
-    bottom: 3%;
   }
 }
