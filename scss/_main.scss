@@ -154,6 +154,11 @@ html {
                             margin-left: 10px;
                             transition: 0.2s all;
                         }
+
+                        &.disable {
+                            color: #3d3d3d;
+                            pointer-events: none;
+                        }
                     }
                 }
             }
@@ -222,6 +227,11 @@ html {
                         left: 50%;
                         transform: translateX(-50%);
                         font-size: 15px; 
+                    }
+
+                    &.disable {
+                        filter: brightness(0.2);
+                        pointer-events: none;
                     }
                 }
             }

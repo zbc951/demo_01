@@ -225,6 +225,10 @@ html body main .left ul li span {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
+html body main .left ul li.disable {
+  color: #3d3d3d;
+  pointer-events: none;
+}
 html body main .fakeLeft {
   width: 15%;
   height: 100%;
@@ -283,6 +287,11 @@ html body main .mainBox section p {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: 15px;
+}
+html body main .mainBox section.disable {
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+  pointer-events: none;
 }
 
 .lb-dataContainer {
