@@ -79,7 +79,6 @@ html {
 }
 html body {
   width: 100%;
-  min-width: 800px;
   height: 100%;
   overflow: auto;
 }
@@ -103,12 +102,13 @@ html body header {
   position: fixed;
   top: 0px;
   left: 0px;
-  min-width: 1100px;
+  min-width: 800px;
   z-index: 2;
 }
 html body header button {
-  width: 50px;
+  width: auto;
   height: 50px;
+  padding: 0px 8px 0px 16px;
   background: transparent;
   position: relative;
   float: left;
@@ -116,24 +116,20 @@ html body header button {
   transition: 0.3s all;
 }
 html body header button:hover, html body header button:active, html body header button.active {
-  background: #4556b1;
+  background: #f85148;
 }
 html body header button:hover i, html body header button:active i, html body header button.active i {
   color: #ffffff;
+}
+html body header button:hover input, html body header button:active input, html body header button.active input {
+  opacity: 1;
+  width: 160px;
 }
 html body header button i {
   font-size: 30px;
   color: #eeeeee;
 }
-html body header button.search {
-  width: auto;
-  padding: 0px 8px;
-}
-html body header button.search:hover input, html body header button.search:active input, html body header button.search.active input {
-  opacity: 1;
-  width: 160px;
-}
-html body header button.search input {
+html body header button input {
   opacity: 0;
   width: 0px;
   height: 24px;
@@ -141,23 +137,23 @@ html body header button.search input {
   border: none;
   vertical-align: super;
   margin-left: 8px;
-  padding-left: 10px;
+  padding: 6px 10px 3px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
-html body header button.search input::-webkit-input-placeholder {
+html body header button input::-webkit-input-placeholder {
   color: #888888;
 }
-html body header button.search input::-moz-placeholder {
+html body header button input::-moz-placeholder {
   color: #888888;
 }
-html body header button.search input:-ms-input-placeholder {
+html body header button input:-ms-input-placeholder {
   color: #888888;
 }
-html body header button.search input::-ms-input-placeholder {
+html body header button input::-ms-input-placeholder {
   color: #888888;
 }
-html body header button.search input::placeholder {
+html body header button input::placeholder {
   color: #888888;
 }
 html body header .logo {
@@ -175,8 +171,11 @@ html body header .logo p {
 }
 html body main {
   width: 100%;
+  min-width: 800px;
   height: auto;
   margin-top: 50px;
+  background: #f1f1f1;
+  float: left;
 }
 html body main .left {
   width: 15%;
@@ -185,13 +184,27 @@ html body main .left {
   position: fixed;
   left: 0px;
   top: 50px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 2;
+}
+html body main .left::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+  height: 5px;
+}
+html body main .left::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+html body main .left::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border-radius: 10px;
 }
 html body main .left ul {
   width: 100%;
   height: auto;
-  padding-top: 30px;
+  padding: 30px 0px 60px;
 }
 html body main .left ul li {
   width: 100%;
@@ -259,39 +272,279 @@ html body main .mainBox::-webkit-scrollbar-thumb {
   background: #4556b1;
   border-radius: 10px;
 }
-html body main .mainBox section {
+html body main .mainBox div {
   display: inline-block;
   width: 49.397%;
   height: 0px;
   padding-bottom: 30%;
-  background: #4556b1;
   margin-bottom: 1.208%;
   position: relative;
   vertical-align: top;
 }
-html body main .mainBox section:nth-of-type(even) {
+html body main .mainBox div:nth-of-type(even) {
   margin-left: 1.208%;
 }
-html body main .mainBox section a {
+html body main .mainBox div a {
   display: block;
   width: 100%;
   height: 0px;
   padding-bottom: 56%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+html body main .mainBox div a.demo_001 {
   background: url("../images/demo_001.jpg") no-repeat;
   background-size: cover;
 }
-html body main .mainBox section p {
+html body main .mainBox div a.demo_002 {
+  background: url("../images/demo_002.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_003 {
+  background: url("../images/demo_003.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_004 {
+  background: url("../images/demo_004.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_005 {
+  background: url("../images/demo_005.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_006 {
+  background: url("../images/demo_006.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_007 {
+  background: url("../images/demo_007.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_008 {
+  background: url("../images/demo_008.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_009 {
+  background: url("../images/demo_009.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_010 {
+  background: url("../images/demo_010.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_011 {
+  background: url("../images/demo_011.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_012 {
+  background: url("../images/demo_012.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_013 {
+  background: url("../images/demo_013.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_014 {
+  background: url("../images/demo_014.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_015 {
+  background: url("../images/demo_015.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_016 {
+  background: url("../images/demo_016.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_017 {
+  background: url("../images/demo_017.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_018 {
+  background: url("../images/demo_018.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_019 {
+  background: url("../images/demo_019.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_020 {
+  background: url("../images/demo_020.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_021 {
+  background: url("../images/demo_021.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_022 {
+  background: url("../images/demo_022.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_023 {
+  background: url("../images/demo_023.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_024 {
+  background: url("../images/demo_024.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_025 {
+  background: url("../images/demo_025.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_026 {
+  background: url("../images/demo_026.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_027 {
+  background: url("../images/demo_027.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_028 {
+  background: url("../images/demo_028.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_029 {
+  background: url("../images/demo_029.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_030 {
+  background: url("../images/demo_030.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_031 {
+  background: url("../images/demo_031.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_032 {
+  background: url("../images/demo_032.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_033 {
+  background: url("../images/demo_033.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_034 {
+  background: url("../images/demo_034.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_035 {
+  background: url("../images/demo_035.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_036 {
+  background: url("../images/demo_036.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_037 {
+  background: url("../images/demo_037.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_038 {
+  background: url("../images/demo_038.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_039 {
+  background: url("../images/demo_039.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_040 {
+  background: url("../images/demo_040.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_041 {
+  background: url("../images/demo_041.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_042 {
+  background: url("../images/demo_042.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_043 {
+  background: url("../images/demo_043.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_044 {
+  background: url("../images/demo_044.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_045 {
+  background: url("../images/demo_045.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_046 {
+  background: url("../images/demo_046.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_047 {
+  background: url("../images/demo_047.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_048 {
+  background: url("../images/demo_048.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_049 {
+  background: url("../images/demo_049.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_050 {
+  background: url("../images/demo_050.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_051 {
+  background: url("../images/demo_051.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_052 {
+  background: url("../images/demo_052.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_053 {
+  background: url("../images/demo_053.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_054 {
+  background: url("../images/demo_054.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div a.demo_055 {
+  background: url("../images/demo_055.jpg") no-repeat;
+  background-size: cover;
+}
+html body main .mainBox div p {
   position: absolute;
   bottom: 2%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: 15px;
+  font-weight: bold;
 }
-html body main .mainBox section.disable {
+html body main .mainBox div.disable a {
   -webkit-filter: brightness(0.2);
           filter: brightness(0.2);
   pointer-events: none;
+}
+html body main .gotop {
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+}
+html body main .gotop span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 26px;
+  height: 30px;
+  background: url("../images/arrow_sm.png") no-repeat;
 }
 
 .lb-dataContainer {
@@ -324,11 +577,11 @@ html body main .mainBox section.disable {
     min-width: 150px;
     width: 0%;
   }
-  html body main .mainBox section {
+  html body main .mainBox div {
     width: 100%;
     padding-bottom: 60%;
   }
-  html body main .mainBox section:nth-of-type(even) {
+  html body main .mainBox div:nth-of-type(even) {
     margin-left: 0%;
   }
 }

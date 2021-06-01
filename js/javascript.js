@@ -60,3 +60,22 @@ $(function(){
         })
     })
 })
+
+    //回到頂端按鈕
+
+$(function(){
+    $(window).scroll(function () {
+		var scrollVal = $(this).scrollTop();
+		if(scrollVal > 1){
+				$(".gotop").fadeIn('200');
+		} else{
+				$(".gotop").fadeOut('200')
+		};
+	})
+	$(".gotop").click(function(){
+		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //各瀏覽器相容性
+		$body.delay('0').animate({
+				scrollTop:0
+		},500);
+	})
+})
