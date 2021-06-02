@@ -5,7 +5,6 @@ $(function(){
         $(this).toggleClass('active');
         $(this).siblings().removeClass('active');
     })
-
     $('header .search,header .search input').blur(function(){
         $('header .search').removeClass('active');
     })
@@ -69,7 +68,7 @@ $(function(){
 		if(scrollVal > 1){
 				$(".gotop").fadeIn('200');
 		} else{
-				$(".gotop").fadeOut('200')
+				$(".gotop").fadeOut('200');
 		};
 	})
 	$(".gotop").click(function(){
@@ -78,4 +77,70 @@ $(function(){
 				scrollTop:0
 		},500);
 	})
+})
+
+    //disable時加入字樣
+
+$(function(){
+    var txt1 = "<span>can't pick</span>"; //命名
+    if($('div').hasClass('disable')) { //設定條件
+        $('div.disable').append(txt1);
+        $('div.disable a').attr('data-lightbox','');
+    }
+})
+
+    //checkbox label效果
+
+$(function(){
+    $('input[type="checkbox"]').change(function(){
+        $(this).closest('label').toggleClass('active');
+    })
+})
+
+    //html+css自動計算a herf+background
+
+$(function(){
+    $('li').each(function(index){
+        $($('#demo'+index+'').children('a')).attr('href','./images/demo_'+index+'.jpg');
+        var myIndex = index + 1;
+        $($('#demo'+index+'').children('a')).attr('data-title','DEMO_'+myIndex+'');
+        $($('#demo'+index+'').children('a')).css('background','url(../images/demo_'+index+'.jpg)');
+        $($('#demo'+index+'').children('a')).css('background-size','cover');
+    })
+})
+
+    //checkbox勾選判定
+
+$(function(){
+    $('li').each(function(index){
+        var myIndex = index + 1;
+        $('#demo'+index+' input[type="checkbox"]').click(function(){
+            if($('#demo'+index+' input[type="checkbox"]').prop('checked')) {
+                $('.shoppingWindow div:nth-of-type('+myIndex+')').addClass('display');
+                $('.shoppingWindow div:nth-of-type('+myIndex+')').css('background','url(../images/demo_'+index+'.jpg)');
+                $('.shoppingWindow div:nth-of-type('+myIndex+')').css('background-size','cover');
+            } else {
+                $('.shoppingWindow div:nth-of-type('+myIndex+')').removeClass('display');
+            }
+        })
+    })
+    var n = $('.shoppingWindow').children('div');
+    $('li').each(function(index){
+        $(n).clone().appendTo('.shoppingWindow');
+    })
+    var s = $('.shoppingWindow').children('s');
+    $('li').each(function(index){
+        $(s).clone().appendTo('.shoppingWindow');
+    })  
+})
+
+    //shoppingcart
+
+$(function(){
+    $('.shoppingcartBtn').click(function(){
+        $('.filter,.shoppingcart').fadeIn('500');
+    })
+    $('.shoppingcart .cancelBtn').click(function(){
+        $('.filter,.shoppingcart').fadeOut('500');
+    })
 })

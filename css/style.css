@@ -76,6 +76,7 @@ main {
 html {
   width: 100%;
   height: 100%;
+  background: #f1f1f1;
 }
 html body {
   width: 100%;
@@ -292,226 +293,6 @@ html body main .mainBox div a {
   border-radius: 5px;
   overflow: hidden;
 }
-html body main .mainBox div a.demo_001 {
-  background: url("../images/demo_001.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_002 {
-  background: url("../images/demo_002.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_003 {
-  background: url("../images/demo_003.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_004 {
-  background: url("../images/demo_004.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_005 {
-  background: url("../images/demo_005.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_006 {
-  background: url("../images/demo_006.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_007 {
-  background: url("../images/demo_007.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_008 {
-  background: url("../images/demo_008.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_009 {
-  background: url("../images/demo_009.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_010 {
-  background: url("../images/demo_010.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_011 {
-  background: url("../images/demo_011.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_012 {
-  background: url("../images/demo_012.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_013 {
-  background: url("../images/demo_013.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_014 {
-  background: url("../images/demo_014.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_015 {
-  background: url("../images/demo_015.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_016 {
-  background: url("../images/demo_016.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_017 {
-  background: url("../images/demo_017.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_018 {
-  background: url("../images/demo_018.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_019 {
-  background: url("../images/demo_019.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_020 {
-  background: url("../images/demo_020.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_021 {
-  background: url("../images/demo_021.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_022 {
-  background: url("../images/demo_022.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_023 {
-  background: url("../images/demo_023.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_024 {
-  background: url("../images/demo_024.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_025 {
-  background: url("../images/demo_025.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_026 {
-  background: url("../images/demo_026.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_027 {
-  background: url("../images/demo_027.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_028 {
-  background: url("../images/demo_028.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_029 {
-  background: url("../images/demo_029.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_030 {
-  background: url("../images/demo_030.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_031 {
-  background: url("../images/demo_031.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_032 {
-  background: url("../images/demo_032.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_033 {
-  background: url("../images/demo_033.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_034 {
-  background: url("../images/demo_034.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_035 {
-  background: url("../images/demo_035.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_036 {
-  background: url("../images/demo_036.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_037 {
-  background: url("../images/demo_037.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_038 {
-  background: url("../images/demo_038.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_039 {
-  background: url("../images/demo_039.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_040 {
-  background: url("../images/demo_040.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_041 {
-  background: url("../images/demo_041.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_042 {
-  background: url("../images/demo_042.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_043 {
-  background: url("../images/demo_043.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_044 {
-  background: url("../images/demo_044.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_045 {
-  background: url("../images/demo_045.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_046 {
-  background: url("../images/demo_046.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_047 {
-  background: url("../images/demo_047.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_048 {
-  background: url("../images/demo_048.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_049 {
-  background: url("../images/demo_049.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_050 {
-  background: url("../images/demo_050.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_051 {
-  background: url("../images/demo_051.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_052 {
-  background: url("../images/demo_052.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_053 {
-  background: url("../images/demo_053.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_054 {
-  background: url("../images/demo_054.jpg") no-repeat;
-  background-size: cover;
-}
-html body main .mainBox div a.demo_055 {
-  background: url("../images/demo_055.jpg") no-repeat;
-  background-size: cover;
-}
 html body main .mainBox div p {
   position: absolute;
   bottom: 2%;
@@ -521,30 +302,227 @@ html body main .mainBox div p {
   font-size: 15px;
   font-weight: bold;
 }
-html body main .mainBox div.disable a {
-  -webkit-filter: brightness(0.2);
-          filter: brightness(0.2);
+html body main .mainBox div span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -75%);
+          transform: translate(-50%, -75%);
+  width: auto;
+  height: auto;
+  color: #b6c3ff;
+  font-size: 3vw;
+  z-index: 10;
+  border: solid 1px #54609c;
+  padding: 5px 20px 15px;
+  background: #54609c85;
+  text-align: center;
   pointer-events: none;
 }
-html body main .gotop {
-  background: #ffffff;
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-}
-html body main .gotop span {
+html body main .mainBox div label {
   display: block;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 6%;
+  height: 10%;
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: solid 1px #828282;
+  -webkit-transition: 0.1s all;
+  transition: 0.1s all;
+}
+html body main .mainBox div label:hover {
+  -webkit-box-shadow: 0px 0px 5px 3px #ffffff;
+          box-shadow: 0px 0px 5px 3px #ffffff;
+}
+html body main .mainBox div label:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html body main .mainBox div label.active i {
+  display: block;
+}
+html body main .mainBox div label input {
+  display: none;
+}
+html body main .mainBox div label i {
+  display: none;
+  font-size: 2vw;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 26px;
-  height: 30px;
-  background: url("../images/arrow_sm.png") no-repeat;
+  color: #4556b1;
+}
+html body main .mainBox div.disable a {
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+  pointer-events: none;
+}
+html body main .mainBox div.disable label {
+  display: none;
+}
+html body main .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #000000d7;
+  z-index: 20;
+}
+html body main .shoppingcart {
+  display: none;
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #f1f1f1;
+  border: solid 2px #828282;
+  border-radius: 8px;
+  z-index: 30;
+}
+html body main .shoppingcart .cancelBtn {
+  width: 50px;
+  height: 50px;
+  background: #f1f1f1;
+  border: solid 2px #828282;
+  border-radius: 30px;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  z-index: 2;
+}
+html body main .shoppingcart .cancelBtn::before {
+  content: "";
+  width: 5px;
+  height: 34px;
+  background: #828282;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 7px;
+  right: 20px;
+}
+html body main .shoppingcart .cancelBtn::after {
+  content: "";
+  width: 5px;
+  height: 34px;
+  background: #828282;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+html body main .shoppingcart h1 {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4d515d;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+html body main .shoppingcart h1 .line {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 90%;
+  height: 1px;
+  background: #828282;
+}
+html body main .shoppingcart .shoppingWindow {
+  width: 90%;
+  height: 100%;
+  overflow: auto;
+  margin: 0px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px 1% 1%;
+  font-size: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+html body main .shoppingcart .shoppingWindow::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+html body main .shoppingcart .shoppingWindow::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+html body main .shoppingcart .shoppingWindow::-webkit-scrollbar-thumb {
+  background: #4556b1;
+  border-radius: 10px;
+}
+html body main .shoppingcart .shoppingWindow div {
+  display: none;
+}
+html body main .shoppingcart .shoppingWindow div.display {
+  display: block;
+  width: 49%;
+  height: 0px;
+  padding-bottom: 23.5%;
+  background: #ccc;
+  margin-top: 1%;
+}
+html body main .shoppingcart .shoppingWindow s {
+  width: 49%;
+}
+html body main .shoppingcart .shoppingWindow s:nth-of-type(1) {
+  display: none;
+}
+html body main .shoppingcartBtn {
+  background: #ffffff;
+  border: solid 2px #828282;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  position: fixed;
+  right: 5px;
+  top: 20%;
+  text-align: center;
+}
+html body main .shoppingcartBtn i {
+  font-size: 24px;
+  color: #41515d;
+  line-height: 50px;
+}
+html body main .gotop {
+  background: #ffffff;
+  border: solid 2px #828282;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  position: fixed;
+  right: 5px;
+  bottom: 3%;
+  text-align: center;
+}
+html body main .gotop i {
+  font-size: 30px;
+  color: #41515d;
+  line-height: 45px;
 }
 
 .lb-dataContainer {
@@ -583,5 +561,9 @@ html body main .gotop span {
   }
   html body main .mainBox div:nth-of-type(even) {
     margin-left: 0%;
+  }
+  html body main .mainBox div label {
+    width: 4%;
+    height: 6.5%;
   }
 }
