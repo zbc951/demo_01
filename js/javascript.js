@@ -104,7 +104,7 @@ $(function(){
         $($('#demo'+index+'').children('a')).attr('href','./images/demo_'+index+'.jpg');
         var myIndex = index + 1;
         $($('#demo'+index+'').children('a')).attr('data-title','DEMO_'+myIndex+'');
-        $($('#demo'+index+'').children('a')).css('background','url(../images/demo_'+index+'.jpg)');
+        $($('#demo'+index+'').children('a')).css('background','url(./images/demo_'+index+'.jpg)');
         $($('#demo'+index+'').children('a')).css('background-size','cover');
     })
 })
