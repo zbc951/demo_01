@@ -320,11 +320,6 @@ html {
                         color: #fff;
                         margin-left: 5px;
 
-                        &:hover {
-                            background: linear-gradient(to top,#b81a12 0%,#f53d33 100%);
-                            border-color: #f53d33;
-                        }
-
                         &.active {
                             background: linear-gradient(to top,#b81a12 0%,#f53d33 100%);
                             border-color: #f53d33;

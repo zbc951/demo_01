@@ -373,11 +373,6 @@ html body main .mainBox div p {
   color: #fff;
   margin-left: 5px;
 }
-html body main .mainBox div p:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#b81a12), to(#f53d33));
-  background: linear-gradient(to top, #b81a12 0%, #f53d33 100%);
-  border-color: #f53d33;
-}
 html body main .mainBox div p.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#b81a12), to(#f53d33));
   background: linear-gradient(to top, #b81a12 0%, #f53d33 100%);
