@@ -373,6 +373,19 @@ html body main .mainBox div p {
   color: #fff;
   margin-left: 5px;
 }
+html body main .mainBox div p:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#b81a12), to(#f53d33));
+  background: linear-gradient(to top, #b81a12 0%, #f53d33 100%);
+  border-color: #f53d33;
+}
+html body main .mainBox div p.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#b81a12), to(#f53d33));
+  background: linear-gradient(to top, #b81a12 0%, #f53d33 100%);
+  border-color: #f53d33;
+}
+html body main .mainBox div p.active label i {
+  display: block;
+}
 html body main .mainBox div p label {
   display: inline-block;
   width: 20px;
@@ -386,15 +399,12 @@ html body main .mainBox div p label {
   vertical-align: middle;
   position: relative;
 }
+html body main .mainBox div p label input {
+  display: none;
+}
 html body main .mainBox div p label:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-}
-html body main .mainBox div p label.active i {
-  display: block;
-}
-html body main .mainBox div p label input {
-  display: none;
 }
 html body main .mainBox div p label i {
   display: none;
@@ -645,5 +655,10 @@ html body main .gotop i {
     min-width: 105px;
     min-height: 24px;
     font-size: 23px;
+  }
+  html body main .mainBox div h1 p label i {
+    font-size: 12px;
+    left: 47%;
+    top: 51%;
   }
 }

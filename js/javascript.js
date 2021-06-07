@@ -93,7 +93,7 @@ $(function(){
 
 $(function(){
     $('input[type="checkbox"]').change(function(){
-        $(this).closest('label').toggleClass('active');
+        $(this).closest('p').toggleClass('active');
     })
 })
 
@@ -148,17 +148,17 @@ $(function(){
         var n = $(this).closest('div').index();
         var x = n - 1;
         $(this).closest('div').removeClass('display');
-        $('#demo'+x+' label').removeClass('active');
+        $('#demo'+x+' p').removeClass('active');
         $('#demo'+x+' label input[type="checkbox"]').prop('checked',false);
         if(x == -1) {
-            $('#demo0 label').removeClass('active');
+            $('#demo0 p').removeClass('active');
             $('#demo0 label input[type="checkbox"]').prop('checked',false);
         }
     })
 
     var num = 0;
     $('label').mousedown(function(){
-        if($(this).hasClass('active')) {
+        if($(this).closest('p').hasClass('active')) {
             num --;
         } else {
             num ++;

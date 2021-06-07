@@ -320,6 +320,23 @@ html {
                         color: #fff;
                         margin-left: 5px;
 
+                        &:hover {
+                            background: linear-gradient(to top,#b81a12 0%,#f53d33 100%);
+                            border-color: #f53d33;
+                        }
+
+                        &.active {
+                            background: linear-gradient(to top,#b81a12 0%,#f53d33 100%);
+                            border-color: #f53d33;
+
+                            label {
+
+                                i {
+                                    display: block;
+                                }
+                            }
+                        }
+
                         label {
                             display: inline-block;
                             width: 20px;
@@ -331,20 +348,13 @@ html {
                             cursor: pointer;
                             vertical-align: middle;
                             position: relative;
-    
-                            &:active {
-                                transform: scale(0.9);
-                            }
-    
-                            &.active {
-    
-                                i {
-                                    display: block;
-                                }
-                            }
                             
                             input {
                                 display: none;
+                            }
+
+                            &:active {
+                                transform: scale(0.9);
                             }
     
                             i {
@@ -682,6 +692,21 @@ html {
                             min-width: 105px;
                             min-height: 24px;
                             font-size: 23px;
+                        }
+
+                        h1 {
+
+                            p {
+
+                                label {
+
+                                    i {
+                                        font-size: 12px;
+                                        left: 47%;
+                                        top: 51%;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
