@@ -36,7 +36,8 @@ html {
             min-width: 800px;
             z-index: 2;
 
-            button {
+            //搜尋按鈕
+            .search {
                 width: auto;
                 height: 50px;
                 padding: 0px 8px 0px 16px;
@@ -78,6 +79,30 @@ html {
                     &::placeholder {
                         color: #888888;
                     }
+                }
+            }
+
+            //購物車按鈕
+            .shoppingcartBtn {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                float: right;
+                background: transparent;
+                transition: 0.2s all;
+
+                &:hover,&:active,&.active {
+                    background: #f85148;
+
+                    i {
+                        color: #ffffff;
+                    }
+                }
+
+                i {
+                    font-size: 24px;
+                    color: #eeeeee;
+                    line-height: 50px;
                 }
             }
 
@@ -264,18 +289,15 @@ html {
                     label {
                         display: block;
                         position: absolute;
-                        top: 1%;
-                        right: 1%;
-                        width: 6%;
-                        height: 10%;
+                        top: -3px;
+                        right: -27px;
+                        width: 20px;
+                        height: 20px;
                         background: #f1f1f1;
-                        border-radius: 5px;
+                        border-radius: 3px;
                         border: solid 1px #828282;
                         transition: 0.1s all;
-
-                        &:hover {
-                            box-shadow: 0px 0px 5px 3px #ffffff;
-                        }
+                        cursor: pointer;
 
                         &:active {
                             transform: scale(0.9);
@@ -294,7 +316,7 @@ html {
 
                         i {
                             display: none;
-                            font-size: 2vw;
+                            font-size: 1vw;
                             position: absolute;
                             left: 50%;
                             top: 50%;
@@ -333,13 +355,13 @@ html {
             .shoppingcart {
                 display: none;
                 position: fixed;
-                width: 90%;
+                width: 79%;
                 height: 90%;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 background: #f1f1f1;
-                border: solid 2px #828282;
+                border: solid 1px #ffffff;
                 border-radius: 8px;
                 z-index: 30;
 
@@ -348,7 +370,7 @@ html {
                     width: 50px;
                     height: 50px;
                     background: #f1f1f1;
-                    border: solid 2px #828282;
+                    border: solid 2px #a9b4e6;
                     border-radius: 30px;
                     position: absolute;
                     right: -25px;
@@ -359,7 +381,7 @@ html {
                         content: "";
                         width: 5px;
                         height: 34px;
-                        background: #828282;
+                        background: #4d5788;
                         transform: rotate(45deg);
                         position: absolute;
                         top: 7px;
@@ -370,7 +392,7 @@ html {
                         content: "";
                         width: 5px;
                         height: 34px;
-                        background: #828282;
+                        background: #4d5788;
                         transform: rotate(-45deg);
                         position: absolute;
                         top: 7px;
@@ -386,32 +408,22 @@ html {
                     line-height: 50px;
                     font-size: 24px;
                     font-weight: bold;
-                    color: #4d515d;
+                    color: #ffffff;
                     position: fixed;
                     top: 0px;
                     left: 0px;
-                    background: #f1f1f1;
-                    border-radius: 8px;
-
-                    .line {
-                        position: absolute;
-                        bottom: 0px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 90%;
-                        height: 1px;
-                        background: #828282;
-                    }
+                    background: #4d5788;
+                    border-radius: 8px 8px 0px 0px;
                 }
 
                 //選購窗
                 .shoppingWindow {
-                    width: 90%;
+                    width: 98%;
                     height: 100%;
                     overflow: auto;
                     margin: 0px auto;
                     box-sizing: border-box;
-                    padding: 50px 1% 1%;
+                    padding: 60px 1% 1%;
                     font-size: 0px;
                     display: flex;
                     flex-wrap: wrap;
@@ -434,43 +446,62 @@ html {
 
                     div {
                         display: none;
+                        position: relative;
+                        width: 32%;
+                        height: 0px;
+                        padding-bottom: 16%;
+                        margin-top: 1%;
 
                         &.display {
                             display: block;
-                            width: 49%;
-                            height: 0px;
-                            padding-bottom: 23.5%;
-                            background: #ccc;
-                            margin-top: 1%;
+                        }
+
+                        button {
+                            width: 30px;
+                            height: 30px;
+                            background: #f1f1f1;
+                            border: solid 2px #a9b4e6;
+                            border-radius: 30px;
+                            position: absolute;
+                            right: -15px;
+                            top: -15px;
+                            z-index: 2;
+
+                            &:active,&.active {
+                                transform: scale(0.9);
+                            }
+
+                            &::before {
+                                content: "";
+                                width: 3px;
+                                height: 18px;
+                                background: #4d5788;
+                                transform: rotate(45deg);
+                                position: absolute;
+                                top: 4px;
+                                right: 12px;
+                            }
+
+                            &::after {
+                                content: "";
+                                width: 3px;
+                                height: 18px;
+                                background: #4d5788;
+                                transform: rotate(-45deg);
+                                position: absolute;
+                                top: 4px;
+                                left: 12px;
+                            }
                         }
                     }
 
                     s {
-                        width: 49%;
+                        width: 32%;
 
                         &:nth-of-type(1) {
                             display: none;
                         }
                     }
-                }
-            }
-
-            //購物車按鈕
-            .shoppingcartBtn {
-                background: #ffffff;
-                border: solid 2px #828282;
-                width: 50px;
-                height: 50px;
-                border-radius: 30px;
-                position: fixed;
-                right: 5px;
-                top: 20%;
-                text-align: center;
-
-                i {
-                    font-size: 24px;
-                    color: #41515d;
-                    line-height: 50px;
                 }
             }
 
@@ -541,11 +572,6 @@ html {
 
                         &:nth-of-type(even) {
                             margin-left: 0%;
-                        }
-
-                        label {
-                            width: 4%;
-                            height: 6.5%;
                         }
                     }
                 }

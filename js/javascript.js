@@ -142,5 +142,22 @@ $(function(){
     })
     $('.shoppingcart .cancelBtn').click(function(){
         $('.filter,.shoppingcart').fadeOut('500');
+        $('.shoppingcartBtn').removeClass('active');
+    })
+    $('.shoppingWindow div button').click(function(){
+        var n = $(this).closest('div').index();
+        var x = n - 1;
+        $(this).closest('div').removeClass('display');
+        $('#demo'+x+' label').removeClass('active');
+        $('#demo'+x+' label input[type="checkbox"]').prop('checked',false);
+        if(x == -1) {
+            $('#demo0 label').removeClass('active');
+            $('#demo0 label input[type="checkbox"]').prop('checked',false);
+        }
+    })
+    $('label').click(function(){
+        $('input[type="checkbox"]').each(function(index){
+            alert(index);
+        })
     })
 })

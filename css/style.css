@@ -106,7 +106,7 @@ html body header {
   min-width: 800px;
   z-index: 2;
 }
-html body header button {
+html body header .search {
   width: auto;
   height: 50px;
   padding: 0px 8px 0px 16px;
@@ -116,21 +116,21 @@ html body header button {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
-html body header button:hover, html body header button:active, html body header button.active {
+html body header .search:hover, html body header .search:active, html body header .search.active {
   background: #f85148;
 }
-html body header button:hover i, html body header button:active i, html body header button.active i {
+html body header .search:hover i, html body header .search:active i, html body header .search.active i {
   color: #ffffff;
 }
-html body header button:hover input, html body header button:active input, html body header button.active input {
+html body header .search:hover input, html body header .search:active input, html body header .search.active input {
   opacity: 1;
   width: 160px;
 }
-html body header button i {
+html body header .search i {
   font-size: 30px;
   color: #eeeeee;
 }
-html body header button input {
+html body header .search input {
   opacity: 0;
   width: 0px;
   height: 24px;
@@ -142,20 +142,40 @@ html body header button input {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
-html body header button input::-webkit-input-placeholder {
+html body header .search input::-webkit-input-placeholder {
   color: #888888;
 }
-html body header button input::-moz-placeholder {
+html body header .search input::-moz-placeholder {
   color: #888888;
 }
-html body header button input:-ms-input-placeholder {
+html body header .search input:-ms-input-placeholder {
   color: #888888;
 }
-html body header button input::-ms-input-placeholder {
+html body header .search input::-ms-input-placeholder {
   color: #888888;
 }
-html body header button input::placeholder {
+html body header .search input::placeholder {
   color: #888888;
+}
+html body header .shoppingcartBtn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  float: right;
+  background: transparent;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+html body header .shoppingcartBtn:hover, html body header .shoppingcartBtn:active, html body header .shoppingcartBtn.active {
+  background: #f85148;
+}
+html body header .shoppingcartBtn:hover i, html body header .shoppingcartBtn:active i, html body header .shoppingcartBtn.active i {
+  color: #ffffff;
+}
+html body header .shoppingcartBtn i {
+  font-size: 24px;
+  color: #eeeeee;
+  line-height: 50px;
 }
 html body header .logo {
   margin: 0px auto;
@@ -323,19 +343,16 @@ html body main .mainBox div span {
 html body main .mainBox div label {
   display: block;
   position: absolute;
-  top: 1%;
-  right: 1%;
-  width: 6%;
-  height: 10%;
+  top: -3px;
+  right: -27px;
+  width: 20px;
+  height: 20px;
   background: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 3px;
   border: solid 1px #828282;
   -webkit-transition: 0.1s all;
   transition: 0.1s all;
-}
-html body main .mainBox div label:hover {
-  -webkit-box-shadow: 0px 0px 5px 3px #ffffff;
-          box-shadow: 0px 0px 5px 3px #ffffff;
+  cursor: pointer;
 }
 html body main .mainBox div label:active {
   -webkit-transform: scale(0.9);
@@ -349,7 +366,7 @@ html body main .mainBox div label input {
 }
 html body main .mainBox div label i {
   display: none;
-  font-size: 2vw;
+  font-size: 1vw;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -378,14 +395,14 @@ html body main .filter {
 html body main .shoppingcart {
   display: none;
   position: fixed;
-  width: 90%;
+  width: 79%;
   height: 90%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: #f1f1f1;
-  border: solid 2px #828282;
+  border: solid 1px #ffffff;
   border-radius: 8px;
   z-index: 30;
 }
@@ -393,7 +410,7 @@ html body main .shoppingcart .cancelBtn {
   width: 50px;
   height: 50px;
   background: #f1f1f1;
-  border: solid 2px #828282;
+  border: solid 2px #a9b4e6;
   border-radius: 30px;
   position: absolute;
   right: -25px;
@@ -404,7 +421,7 @@ html body main .shoppingcart .cancelBtn::before {
   content: "";
   width: 5px;
   height: 34px;
-  background: #828282;
+  background: #4d5788;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -415,7 +432,7 @@ html body main .shoppingcart .cancelBtn::after {
   content: "";
   width: 5px;
   height: 34px;
-  background: #828282;
+  background: #4d5788;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   position: absolute;
@@ -429,31 +446,21 @@ html body main .shoppingcart h1 {
   line-height: 50px;
   font-size: 24px;
   font-weight: bold;
-  color: #4d515d;
+  color: #ffffff;
   position: fixed;
   top: 0px;
   left: 0px;
-  background: #f1f1f1;
-  border-radius: 8px;
-}
-html body main .shoppingcart h1 .line {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 90%;
-  height: 1px;
-  background: #828282;
+  background: #4d5788;
+  border-radius: 8px 8px 0px 0px;
 }
 html body main .shoppingcart .shoppingWindow {
-  width: 90%;
+  width: 98%;
   height: 100%;
   overflow: auto;
   margin: 0px auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 50px 1% 1%;
+  padding: 60px 1% 1%;
   font-size: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,36 +484,57 @@ html body main .shoppingcart .shoppingWindow::-webkit-scrollbar-thumb {
 }
 html body main .shoppingcart .shoppingWindow div {
   display: none;
+  position: relative;
+  width: 32%;
+  height: 0px;
+  padding-bottom: 16%;
+  margin-top: 1%;
 }
 html body main .shoppingcart .shoppingWindow div.display {
   display: block;
-  width: 49%;
-  height: 0px;
-  padding-bottom: 23.5%;
-  background: #ccc;
-  margin-top: 1%;
+}
+html body main .shoppingcart .shoppingWindow div button {
+  width: 30px;
+  height: 30px;
+  background: #f1f1f1;
+  border: solid 2px #a9b4e6;
+  border-radius: 30px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  z-index: 2;
+}
+html body main .shoppingcart .shoppingWindow div button:active, html body main .shoppingcart .shoppingWindow div button.active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html body main .shoppingcart .shoppingWindow div button::before {
+  content: "";
+  width: 3px;
+  height: 18px;
+  background: #4d5788;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  right: 12px;
+}
+html body main .shoppingcart .shoppingWindow div button::after {
+  content: "";
+  width: 3px;
+  height: 18px;
+  background: #4d5788;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 4px;
+  left: 12px;
 }
 html body main .shoppingcart .shoppingWindow s {
-  width: 49%;
+  width: 32%;
 }
 html body main .shoppingcart .shoppingWindow s:nth-of-type(1) {
   display: none;
-}
-html body main .shoppingcartBtn {
-  background: #ffffff;
-  border: solid 2px #828282;
-  width: 50px;
-  height: 50px;
-  border-radius: 30px;
-  position: fixed;
-  right: 5px;
-  top: 20%;
-  text-align: center;
-}
-html body main .shoppingcartBtn i {
-  font-size: 24px;
-  color: #41515d;
-  line-height: 50px;
 }
 html body main .gotop {
   background: #ffffff;
@@ -561,9 +589,5 @@ html body main .gotop i {
   }
   html body main .mainBox div:nth-of-type(even) {
     margin-left: 0%;
-  }
-  html body main .mainBox div label {
-    width: 4%;
-    height: 6.5%;
   }
 }
