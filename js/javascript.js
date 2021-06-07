@@ -155,9 +155,4 @@ $(function(){
             $('#demo0 label input[type="checkbox"]').prop('checked',false);
         }
     })
-    $('label').click(function(){
-        $('input[type="checkbox"]').each(function(index){
-            alert(index);
-        })
-    })
 })
