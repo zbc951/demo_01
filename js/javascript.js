@@ -131,7 +131,7 @@ $(function(){
     var s = $('.shoppingWindow').children('s');
     $('li').each(function(index){
         $(s).clone().appendTo('.shoppingWindow');
-    })  
+    })
 })
 
     //shoppingcart
@@ -153,6 +153,32 @@ $(function(){
         if(x == -1) {
             $('#demo0 label').removeClass('active');
             $('#demo0 label input[type="checkbox"]').prop('checked',false);
+        }
+    })
+
+    var num = 0;
+    $('label').mousedown(function(){
+        if($(this).hasClass('active')) {
+            num --;
+        } else {
+            num ++;
+        }
+        $('.shoppingcartBtn span').text(num);
+
+        if(num == 0) {
+            $('.shoppingcartBtn span').removeClass('display');
+        } else {
+            $('.shoppingcartBtn span').addClass('display');
+        }
+    })
+    $('.shoppingWindow div button').mousedown(function(){
+        num --;
+        $('.shoppingcartBtn span').text(num);
+
+        if(num == 0) {
+            $('.shoppingcartBtn span').removeClass('display');
+        } else {
+            $('.shoppingcartBtn span').addClass('display');
         }
     })
 })

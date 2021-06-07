@@ -158,13 +158,15 @@ html body header .search input::placeholder {
   color: #888888;
 }
 html body header .shoppingcartBtn {
-  width: 50px;
+  width: auto;
   height: 50px;
   text-align: center;
   float: right;
   background: transparent;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  padding: 0px 20px;
+  position: relative;
 }
 html body header .shoppingcartBtn:hover, html body header .shoppingcartBtn:active, html body header .shoppingcartBtn.active {
   background: #f85148;
@@ -172,10 +174,31 @@ html body header .shoppingcartBtn:hover, html body header .shoppingcartBtn:activ
 html body header .shoppingcartBtn:hover i, html body header .shoppingcartBtn:active i, html body header .shoppingcartBtn.active i {
   color: #ffffff;
 }
+html body header .shoppingcartBtn:hover span, html body header .shoppingcartBtn:active span, html body header .shoppingcartBtn.active span {
+  background: #ffffff;
+  color: #ff0000;
+}
 html body header .shoppingcartBtn i {
-  font-size: 24px;
+  font-size: 28px;
   color: #eeeeee;
   line-height: 50px;
+}
+html body header .shoppingcartBtn span {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 1px 5px;
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+html body header .shoppingcartBtn span.display {
+  display: block;
 }
 html body header .logo {
   margin: 0px auto;
@@ -298,7 +321,7 @@ html body main .mainBox div {
   width: 49.397%;
   height: 0px;
   padding-bottom: 30%;
-  margin-bottom: 1.208%;
+  margin-bottom: 1%;
   position: relative;
   vertical-align: top;
 }
@@ -309,13 +332,13 @@ html body main .mainBox div a {
   display: block;
   width: 100%;
   height: 0px;
-  padding-bottom: 56%;
+  padding-bottom: 52%;
   border-radius: 5px;
   overflow: hidden;
 }
-html body main .mainBox div p {
+html body main .mainBox div h1 {
   position: absolute;
-  bottom: 2%;
+  bottom: 5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -340,11 +363,14 @@ html body main .mainBox div span {
   text-align: center;
   pointer-events: none;
 }
-html body main .mainBox div label {
-  display: block;
-  position: absolute;
-  top: -3px;
-  right: -27px;
+html body main .mainBox div p {
+  display: inline-block;
+  border: solid 3px #54609C;
+  border-radius: 30px;
+  padding: 4px 15px;
+}
+html body main .mainBox div p label {
+  display: inline-block;
   width: 20px;
   height: 20px;
   background: #f1f1f1;
@@ -353,18 +379,20 @@ html body main .mainBox div label {
   -webkit-transition: 0.1s all;
   transition: 0.1s all;
   cursor: pointer;
+  vertical-align: middle;
+  position: relative;
 }
-html body main .mainBox div label:active {
+html body main .mainBox div p label:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
-html body main .mainBox div label.active i {
+html body main .mainBox div p label.active i {
   display: block;
 }
-html body main .mainBox div label input {
+html body main .mainBox div p label input {
   display: none;
 }
-html body main .mainBox div label i {
+html body main .mainBox div p label i {
   display: none;
   font-size: 1vw;
   position: absolute;
@@ -379,7 +407,11 @@ html body main .mainBox div.disable a {
           filter: brightness(0.2);
   pointer-events: none;
 }
-html body main .mainBox div.disable label {
+html body main .mainBox div.disable h1 {
+  height: 36px;
+  line-height: 36px;
+}
+html body main .mainBox div.disable h1 p {
   display: none;
 }
 html body main .filter {
@@ -575,6 +607,16 @@ html body main .gotop i {
   font-size: 18px !important;
 }
 
+@media screen and (max-width: 1570px) {
+  html body main .mainBox div h1 {
+    bottom: 2%;
+  }
+}
+@media screen and (max-width: 1240px) {
+  html body main .mainBox div h1 {
+    bottom: 0%;
+  }
+}
 @media screen and (max-width: 1100px) {
   html body main .left {
     min-width: 140px;
@@ -589,5 +631,15 @@ html body main .gotop i {
   }
   html body main .mainBox div:nth-of-type(even) {
     margin-left: 0%;
+  }
+  html body main .mainBox div h1 {
+    bottom: 2%;
+  }
+}
+@media screen and (max-width: 800px) {
+  html body main .mainBox div span {
+    min-width: 105px;
+    min-height: 24px;
+    font-size: 23px;
   }
 }
