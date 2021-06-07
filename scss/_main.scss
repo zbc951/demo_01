@@ -313,16 +313,19 @@ html {
 
                     p {
                         display: inline-block;
-                        border: solid 3px #54609C;
+                        border: solid 1px #7e94ff;
                         border-radius: 30px;
-                        padding: 4px 15px;
+                        padding: 4px 12px;
+                        background: linear-gradient(to bottom,#798de0 0%,#4e4db7 100%);
+                        color: #fff;
+                        margin-left: 5px;
 
                         label {
                             display: inline-block;
                             width: 20px;
                             height: 20px;
                             background: #f1f1f1;
-                            border-radius: 3px;
+                            border-radius: 30px;
                             border: solid 1px #828282;
                             transition: 0.1s all;
                             cursor: pointer;
@@ -346,7 +349,7 @@ html {
     
                             i {
                                 display: none;
-                                font-size: 1vw;
+                                font-size: 0.7vw;
                                 position: absolute;
                                 left: 50%;
                                 top: 50%;

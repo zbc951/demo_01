@@ -365,16 +365,20 @@ html body main .mainBox div span {
 }
 html body main .mainBox div p {
   display: inline-block;
-  border: solid 3px #54609C;
+  border: solid 1px #7e94ff;
   border-radius: 30px;
-  padding: 4px 15px;
+  padding: 4px 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#798de0), to(#4e4db7));
+  background: linear-gradient(to bottom, #798de0 0%, #4e4db7 100%);
+  color: #fff;
+  margin-left: 5px;
 }
 html body main .mainBox div p label {
   display: inline-block;
   width: 20px;
   height: 20px;
   background: #f1f1f1;
-  border-radius: 3px;
+  border-radius: 30px;
   border: solid 1px #828282;
   -webkit-transition: 0.1s all;
   transition: 0.1s all;
@@ -394,7 +398,7 @@ html body main .mainBox div p label input {
 }
 html body main .mainBox div p label i {
   display: none;
-  font-size: 1vw;
+  font-size: 0.7vw;
   position: absolute;
   left: 50%;
   top: 50%;
