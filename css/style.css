@@ -656,4 +656,9 @@ html body main .gotop i {
     left: 47%;
     top: 51%;
   }
+  html body main .shoppingcart .shoppingWindow div {
+    width: 95%;
+    padding-bottom: 45%;
+    margin-top: 3%;
+  }
 }
