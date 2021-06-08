@@ -656,6 +656,14 @@ html body main .gotop i {
     top: -55px;
   }
 
+  .lb-outerContainer {
+    width: 90% !important;
+  }
+
+  .lb-image {
+    width: 100% !important;
+  }
+
   .lb-close {
     width: 50px !important;
     height: 50px !important;
@@ -665,7 +673,7 @@ html body main .gotop i {
   }
 
   .lightbox {
-    top: 70px !important;
+    top: 120px !important;
   }
 }
 @media screen and (max-width: 800px) {

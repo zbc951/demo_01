@@ -698,6 +698,14 @@ html {
         top: -55px;
     }
 
+    .lb-outerContainer {
+        width: 90% !important;
+    }
+
+    .lb-image {
+        width: 100% !important;
+    }
+
     .lb-close {
         width: 50px !important;
         height: 50px !important;
@@ -706,7 +714,7 @@ html {
     }
 
     .lightbox {
-        top: 70px !important;
+        top: 120px !important;
     }
 }
 
