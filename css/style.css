@@ -649,7 +649,27 @@ html body main .gotop i {
   html body main .shoppingcart .shoppingWindow div {
     width: 95%;
     padding-bottom: 45%;
-    margin-top: 3%;
+    margin-top: 12%;
+  }
+  html body main .shoppingcart .shoppingWindow div button {
+    right: 50%;
+    top: -55px;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    width: 50px;
+    height: 50px;
+  }
+  html body main .shoppingcart .shoppingWindow div button::before {
+    width: 5px;
+    height: 34px;
+    top: 7px;
+    right: 20px;
+  }
+  html body main .shoppingcart .shoppingWindow div button::after {
+    width: 5px;
+    height: 34px;
+    top: 7px;
+    left: 20px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -662,10 +682,5 @@ html body main .gotop i {
     font-size: 12px;
     left: 47%;
     top: 51%;
-  }
-  html body main .shoppingcart .shoppingWindow div {
-    width: 95%;
-    padding-bottom: 45%;
-    margin-top: 3%;
   }
 }
