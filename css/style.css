@@ -649,27 +649,23 @@ html body main .gotop i {
   html body main .shoppingcart .shoppingWindow div {
     width: 95%;
     padding-bottom: 45%;
-    margin-top: 12%;
+    margin-top: 3%;
   }
-  html body main .shoppingcart .shoppingWindow div button {
-    right: 50%;
+
+  .lb-dataContainer {
     top: -55px;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-    width: 50px;
-    height: 50px;
   }
-  html body main .shoppingcart .shoppingWindow div button::before {
-    width: 5px;
-    height: 34px;
-    top: 7px;
-    right: 20px;
+
+  .lb-close {
+    width: 50px !important;
+    height: 50px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
-  html body main .shoppingcart .shoppingWindow div button::after {
-    width: 5px;
-    height: 34px;
-    top: 7px;
-    left: 20px;
+
+  .lightbox {
+    top: 70px !important;
   }
 }
 @media screen and (max-width: 800px) {
