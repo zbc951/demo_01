@@ -645,6 +645,13 @@ html body main .gotop i {
     bottom: 2%;
   }
 }
+@media screen and (max-width: 980px) {
+  html body main .shoppingcart .shoppingWindow div {
+    width: 95%;
+    padding-bottom: 45%;
+    margin-top: 3%;
+  }
+}
 @media screen and (max-width: 800px) {
   html body main .mainBox div span {
     min-width: 105px;
