@@ -101,10 +101,10 @@ $(function(){
 
 $(function(){
     $('li').each(function(index){
-        $($('#demo'+index+'').children('a')).attr('href','./images/demo_'+index+'.jpg');
+        $($('#demo'+index+'').children('a')).attr('href','./images/demo_'+index+'.webp');
         var myIndex = index + 1;
         $($('#demo'+index+'').children('a')).attr('data-title','DEMO_'+myIndex+'');
-        $($('#demo'+index+'').children('a')).css('background','url(./images/demo_'+index+'.jpg)');
+        $($('#demo'+index+'').children('a')).css('background','url(./images/demo_'+index+'.webp)');
         $($('#demo'+index+'').children('a')).css('background-size','cover');
     })
 })
@@ -117,7 +117,7 @@ $(function(){
         $('#demo'+index+' input[type="checkbox"]').click(function(){
             if($('#demo'+index+' input[type="checkbox"]').prop('checked')) {
                 $('.shoppingWindow div:nth-of-type('+myIndex+')').addClass('display');
-                $('.shoppingWindow div:nth-of-type('+myIndex+')').css('background','url(./images/demo_'+index+'.jpg)');
+                $('.shoppingWindow div:nth-of-type('+myIndex+')').css('background','url(./images/demo_'+index+'.webp)');
                 $('.shoppingWindow div:nth-of-type('+myIndex+')').css('background-size','cover');
             } else {
                 $('.shoppingWindow div:nth-of-type('+myIndex+')').removeClass('display');
